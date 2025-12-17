@@ -31,15 +31,19 @@ Install the required dependencies before running the project:
 
 ```bash
 pip install tensorflow keras opencv-python numpy pillow scikit-image
+```
+
+---
 
 ## Dataset
-The model is trained using the Sign Language MNIST Dataset, which contains grayscale images of hand gestures representing the alphabet letters.
+The model is trained using the **Sign Language MNIST Dataset**, which contains grayscale images of hand gestures representing the alphabet letters.
 
-##Dataset Link: Sign Language MNIST on Kaggle
+**Dataset Link:** [Sign Language MNIST on Kaggle](https://www.kaggle.com/datamunge/sign-language-mnist)
 
+---
 
-
-##Project Structure
+## Project Structure
+```
 Sign-Language-Recognition/
 │
 ├── ROIinOpenCV.py              # Main script for real-time recognition
@@ -49,41 +53,41 @@ Sign-Language-Recognition/
 ├── sign_language_pytorch.ipynb # PyTorch version of the implementation
 ├── requirements.txt
 └── README.md
+```
 
+---
 
-How to Run
-
-Clone the repository.
-Install all required dependencies.
-Ensure the trained model file (CNNmodel.h5) is in the correct directory.
-
-Run the main script:
-python ROIinOpenCV.py
-
+## How to Run
+1. Clone the repository.
+2. Install all required dependencies.
+3. Ensure the trained model file (`CNNmodel.h5`) is in the correct directory.
+4. Run the main script:
+   ```bash
+   python ROIinOpenCV.py
+   ```
+   
 A webcam window will open, and the system will start predicting sign language gestures in real time.
 
-PyTorch Implementation
+---
 
-A PyTorch-based implementation is also provided in the sign_language_pytorch.ipynb notebook for further experimentation.
+## PyTorch Implementation
+A PyTorch-based implementation is also provided in the `sign_language_pytorch.ipynb` notebook for further experimentation.
 
-Results
+---
 
+## Results
 The system delivers reliable real-time predictions under good lighting conditions. Using ROI-based preprocessing improves accuracy and stability significantly.
 
-Future Improvements
-
-Support for recognizing full words and sentences
-
-Dynamic gesture recognition
-
-Enhanced background subtraction
-
-Deployment on mobile platforms
-
-Integration with speech synthesis
-
-License
-This project is licensed under the Apache License 2.0. See the LICENSE file for more details.
 ---
-With this complete Markdown README, you can now paste it directly into your `README.md` file, and it will r
 
+## Future Improvements
+- Support for recognizing full words and sentences
+- Dynamic gesture recognition
+- Enhanced background subtraction
+- Deployment on mobile platforms
+- Integration with speech synthesis
+
+---
+
+## License
+This project is licensed under the **Apache License 2.0**. See the LICENSE file for more details.
